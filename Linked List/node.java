@@ -12,13 +12,19 @@ public class node<T>{
     // print function to print the linked list
 
     public static void print(node<Integer> head){
+
         node<Integer> temp = head; // keeping the address of the first node for future use.
+
         while(head != null){
             System.out.print (head.data + " ");
             head = head.next;
         }
-        head = temp;
-        System.out.println();
+
+        head = temp; // using the temp variale that stores the address of the head node
+
+        System.out.println(); // for a new line
+
+
         while(head != null){
             System.out.print(head.data + " ");
             head = head.next;
